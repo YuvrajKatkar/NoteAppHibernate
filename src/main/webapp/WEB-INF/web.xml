@@ -4,4 +4,15 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>addNote</servlet-name>
+  	<display-name>addNote</display-name>
+  	<description></description>
+  	<servlet-class>DAO.addNote</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>addNote</servlet-name>
+  	<url-pattern>/addNote</url-pattern>
+  </servlet-mapping>
+  
 </web-app>

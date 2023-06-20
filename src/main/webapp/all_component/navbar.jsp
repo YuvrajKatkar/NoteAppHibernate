@@ -13,7 +13,7 @@
         <a class="nav-link" href="index.jsp">Home</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="#">Add notes</a>
+        <a class="nav-link" href="add.jsp">Add notes</a>
       </li>
       <li class="nav-item active">
         <a class="nav-link" href="#">Show notes</a>
