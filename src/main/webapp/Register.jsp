@@ -7,10 +7,19 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
+<style>
+body {
+     background: linear-gradient(to bottom, #00838f, #00bcb1, #00a8eb, #0088f7, #9e54c6);
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+</style>
 <%@ include file="all_component/allCSS.jsp"%>
 <body>
 	<%@ include file="all_component/navbar.jsp"%>
-	<div class="continer-fluid div-color">
+	<div class="container-fluid ">
 		<div class="row">
 			<div class="col-md-4 offset-md-4">
 				<div class="card mt-5"></div>
