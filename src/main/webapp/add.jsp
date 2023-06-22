@@ -23,7 +23,10 @@ body {
 	Admin admin = (Admin) session.getAttribute("user");
 	if (admin != null) {
 	%>
+
 	<div class="container-fluid ">
+
+
 		<div class="row">
 			<div class="col-md-4 offset-md-4">
 				<div class="card mt-5"></div>
@@ -55,10 +58,12 @@ body {
 	<%
 	} else {
 		%>
+
 			<div class="text-center"><h1>Please login first
 			
 			</h1></div>
 			
+
 		<%
 	}
 	%>
