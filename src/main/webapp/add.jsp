@@ -1,3 +1,4 @@
+<%@page import="DTO.Admin"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -10,6 +11,10 @@
 <%@ include file="all_component/allCSS.jsp"%>
 <body>
 	<%@ include file="all_component/navbar.jsp"%>
+	<%
+	Admin admin = (Admin) session.getAttribute("user");
+	if (admin != null) {
+	%>
 	<div class="continer-fluid div-color">
 		<div class="row">
 			<div class="col-md-4 offset-md-4">
@@ -22,14 +27,13 @@
 
 						<div class="form-group">
 							<label for="exampleInputEmail1">Note Title</label> <input
-								type="text" class="form-control" id="noteTitle"
+								type="text" class="form-control" name="noteTitle"
 								aria-describedby="emailHelp" placeholder="Add note title here">
 
 						</div>
 						<div class="form-group">
 							<label for="exampleFormControlTextarea1">Note Description</label>
-							<textarea class="form-control" id="noteDesc"
-								rows="3"></textarea>
+							<textarea class="form-control" name="noteDesc" rows="3"></textarea>
 						</div>
 
 						<button type="submit" class="btn btn-primary badge-pill btn-block">Add
@@ -39,6 +43,16 @@
 			</div>
 		</div>
 	</div>
+
+	<%
+	} else {
+		%>
+			<h1>Please login first
+			
+			</h1>
+		<%
+	}
+	%>
 
 
 </body>

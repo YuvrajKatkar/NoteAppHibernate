@@ -5,7 +5,9 @@
 .navbar .nav-item .nav-link {
 	font-size: 19px;
 }
+*{
 
+}
 .nav-custom .nav-item:hover .nav-link {
 	background: white;
 	color: #00838f;
@@ -13,6 +15,5 @@
 }
 
 .div-color {
-	background-image: linear-gradient(to bottom, #00838f, #00bcb1, #00a8eb, #0088f7, #9e54c6);
-	height: 100vh;
+
 }

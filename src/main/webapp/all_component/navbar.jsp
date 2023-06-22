@@ -16,14 +16,15 @@
         <a class="nav-link" href="add.jsp">Add notes</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="#">Show notes</a>
+        <a class="nav-link" href="show.jsp">Show notes</a>
       </li>
       
       
     </ul>
-    <form class="form-inline my-2 my-lg-0">
+    <form class="form-inline my-2 my-lg-0" method="post" action="logout">
       <a class="btn btn-light my-2 my-sm-0 mr-3" href="Login.jsp" type="submit">Login</a>
-      <a class="btn btn-light my-2 my-sm-0" href="Register.jsp" type="submit">Register</a>
+      <a class="btn btn-light my-2 my-sm-0 mr-3" href="Register.jsp" type="submit">Register</a>
+      <input class="btn btn-light my-2 my-sm-0"   type="submit" value="Log out"></input>
     </form>
   </div>
 </nav>

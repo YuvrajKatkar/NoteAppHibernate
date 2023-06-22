@@ -1,3 +1,4 @@
+<%@page import="DAO.ProvideEntityManager"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -18,6 +19,11 @@ margin: 0; padding: 0;
 </head>
 <%@ include file="all_component/allCSS.jsp" %>
 <body>
+	<%
+	if(ProvideEntityManager.entityManager==null){
+	 	ProvideEntityManager.entityManager=ProvideEntityManager.provideEntityManager();
+	}
+	%>
 	<%@ include file="all_component/navbar.jsp" %>
 	<div class="container-fluid">
 	<div class="text-center">
