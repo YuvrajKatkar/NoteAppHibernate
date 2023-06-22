@@ -44,7 +44,7 @@ body {
 					<div class="card-body">
 						
 						<p class="card-text"><%=note.getDescription() %></p>
-						<a href="#" class="btn btn-primary">Go somewhere</a>
+						<!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
 					</div>
 				</div>
 				<%
