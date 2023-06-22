@@ -8,6 +8,15 @@
 
 <meta charset="UTF-8">
 <title>Show notes</title>
+<style>
+body {
+     background: linear-gradient(to bottom, #00838f, #00bcb1, #00a8eb, #0088f7, #9e54c6);
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+</style>
 </head>
 <%@ include file="all_component/allCSS.jsp"%>
 <body>
@@ -16,7 +25,7 @@
 	Admin admin = (Admin) session.getAttribute("user");
 	if (admin != null) {
 	%>
-	<div class="continer-fluid  div-color">
+	<div class="continer-fluid  ">
 		<div class="row">
 			<div class="col-md-4 offset-md-4">
 				<div class="card mt-5"></div>
@@ -45,7 +54,9 @@
 	<%
 	} else {
 	%>
-	<h1>Please login first</h1>
+	<div class="text-center"><h1>Please login first
+			
+			</h1></div>
 	<%
 	}
 	%>
